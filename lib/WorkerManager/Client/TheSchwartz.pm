@@ -7,7 +7,7 @@ use TheSchwartz::Simple;
 
 sub new {
     my ($class, $args) = @_;
-    my $dns = $args->{dns} || 'dbi:mysql:dbname=theschwartz;host=192.168.3.54';
+    my $dns = $args->{dsn} || 'dbi:mysql:dbname=theschwartz;host=127.0.0.1';
     my $user = $args->{user} || 'nobody';
     my $pass = $args->{pass} || 'nobody';
 
